@@ -7,7 +7,7 @@
     "deploy": "sls deploy",
     "start": "sls offline -s dev",
     "test": "jest --runInBand",
-    "coverage": "jest --ci --runInBand --reporters=default --reporters=jest-junit --collect-coverage"
+    "coverage": "jest --ci --runInBand --reporters=default --reporters=jest-junit --testResultsProcessor=jest-sonar-reporter --collect-coverage"
   },
   "dependencies": {
     "@middy/core": "^1.0.0",
