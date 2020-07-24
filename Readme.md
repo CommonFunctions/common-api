@@ -1,6 +1,6 @@
 # Common Api
 
-[![Common Api](https://circleci.com/gh/CommonFunctions/common-api.svg?style=svg&circle-token=c0fc8dd0db5c9af0e9c1e9b083a96e9b6f60217c)](https://circleci.com/gh/CommonFunctions/common-api) [![codecov](https://codecov.io/gh/CommonFunctions/common-api/branch/master/graph/badge.svg)](https://codecov.io/gh/CommonFunctions/common-api) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=CommonFunctions_common-api&metric=alert_status)](https://sonarcloud.io/dashboard?id=CommonFunctions_common-api)
+[![Common Api](https://circleci.com/gh/CommonFunctions/common-api.svg?style=svg&circle-token=c0fc8dd0db5c9af0e9c1e9b083a96e9b6f60217c)](https://circleci.com/gh/CommonFunctions/common-api) [![codecov](https://codecov.io/gh/CommonFunctions/common-api/branch/master/graph/badge.svg)](https://codecov.io/gh/CommonFunctions/common-api) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=CommonFunctions_common-api&metric=alert_status)](https://sonarcloud.io/dashboard?id=CommonFunctions_common-api) [![Known Vulnerabilities](https://snyk.io/test/github/CommonFunctions/common-api/badge.svg)](https://snyk.io/test/github/CommonFunctions/common-api)
 
 Use pre-defined functions from serverless environment.
 
