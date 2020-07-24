@@ -1,0 +1,35 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+  codecov: codecov/codecov@1.1.1
+jobs:
+  build-test-deploy:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run:
+                name: Install dependencies
+                command: npm install
+      - run:
+          name: Run tests with JUnit as reporter
+          command: npm run coverage
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - codecov/upload:
+          token: $CODECOV_TOKEN
+          file: coverage/coverage-final.json
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit/
+      - run:
+          name: Deploy App
+          command: npm run deploy
+
+workflows:
+  build-test-deploy:
+    jobs:
+      - build-test-deploy

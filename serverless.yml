@@ -1,0 +1,105 @@
+org: function
+app: common-api
+
+service:
+  name: common-api
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+  serverless-jetpack:
+    mode: npm
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+  - serverless-jetpack
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-central-1
+  apiGateway:
+    minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
+  environment:
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
+
+functions:
+  currency-latestRate:
+    handler: src/services/currency-service/handler.currencyRateLatestHandler
+    events:
+      - http:
+          path: currency/exchange/{fromCurrencyCode}/{toCurrencyCode}
+          method: get
+          cors: true
+  currency-latestConversion:
+    handler: src/services/currency-service/handler.currencyConversionLatestHandler
+    events:
+      - http:
+          path: currency/exchange/{fromCurrencyCode}/{toCurrencyCode}/{amount}
+          method: get
+          cors: true
+  currency-historyConversion:
+    handler: src/services/currency-service/handler.currencyConversionHistoryHandler
+    events:
+      - http:
+          path: currency/exchange/{fromCurrencyCode}/{toCurrencyCode}/{amount}/{date}
+          method: get
+          cors: true
+  generation-identityNumber:
+    handler: src/services/generation-service/handler.identityNumberGenerationHandler
+    events:
+      - http:
+          path: generation/identityNumber/{countryCode}
+          method: get
+          cors: true
+  generation-taxNumber:
+    handler: src/services/generation-service/handler.taxNumberGenerationHandler
+    events:
+      - http:
+          path: generation/taxNumber/{countryCode}
+          method: get
+          cors: true
+  validation-email:
+    handler: src/services/validation-service/handler.emailValidationHandler
+    events:
+      - http:
+          path: validation/email/{email}
+          method: get
+          cors: true
+  validation-taxNumber:
+    handler: src/services/validation-service/handler.taxNumberValidationHandler
+    events:
+      - http:
+          path: validation/taxNumber/{countryCode}/{taxNumber}
+          method: get
+          cors: true
+  validation-identityNumber:
+    handler: src/services/validation-service/handler.identityNumberValidationHandler
+    events:
+      - http:
+          path: validation/identityNumber/{countryCode}/{identityNumber}
+          method: get
+          cors: true
+  validation-plate:
+    handler: src/services/validation-service/handler.plateValidationHandler
+    events:
+      - http:
+          path: validation/plate/{countryCode}/{plate}
+          method: get
+          cors: true
+  validation-phone:
+    handler: src/services/validation-service/handler.phoneValidationHandler
+    events:
+      - http:
+          path: validation/phone/{countryCode}/{phone}
+          method: get
+          cors: true
+  validation-ipAddress:
+    handler: src/services/validation-service/handler.ipAddressValidationHandler
+    events:
+      - http:
+          path: validation/ipAddress/{ipAddress}
+          method: get
+          cors: true
