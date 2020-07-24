@@ -7,7 +7,7 @@
     "deploy": "sls deploy",
     "start": "sls offline -s dev",
     "test": "jest --runInBand",
-    "coverage": "jest --ci --runInBand --reporters=default --reporters=jest-junit --testResultsProcessor=jest-sonar-reporter --collect-coverage"
+    "coverage": "jest --ci --runInBand --reporters=default --reporters=jest-junit --collect-coverage"
   },
   "dependencies": {
     "@middy/core": "^1.0.0",
@@ -29,7 +29,6 @@
     "fork-ts-checker-webpack-plugin": "^3.0.1",
     "jest": "^26.1.0",
     "jest-junit": "^11.0.1",
-    "jest-sonar-reporter": "^2.0.0",
     "serverless": "^1.74.1",
     "serverless-jetpack": "^0.10.7",
     "serverless-offline": "^6.4.0",

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="25" failures="0" time="9.184">
+  <testsuite name="Exchange Rate Api" errors="0" failures="0" skipped="0" timestamp="2020-07-24T17:51:21" time="7.106" tests="2">
+    <testcase classname="Exchange Rate Api Get Latest Rates" name="Exchange Rate Api Get Latest Rates" time="0.219">
+    </testcase>
+    <testcase classname="Exchange Rate Api Get History Rates" name="Exchange Rate Api Get History Rates" time="0.167">
+    </testcase>
+  </testsuite>
+  <testsuite name="Latest Currency Conversion" errors="0" failures="0" skipped="0" timestamp="2020-07-24T17:51:28" time="0.354" tests="2">
+    <testcase classname="Latest Currency Conversion Valid Input" name="Latest Currency Conversion Valid Input" time="0.018">
+    </testcase>
+    <testcase classname="History Currency Conversion Valid Input" name="History Currency Conversion Valid Input" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Identity Number Generation" errors="0" failures="0" skipped="0" timestamp="2020-07-24T17:51:28" time="0.661" tests="3">
+    <testcase classname="Identity Number Generation Valid Input" name="Identity Number Generation Valid Input" time="0.004">
+    </testcase>
+    <testcase classname="Identity Number Generation Invalid CountryCode" name="Identity Number Generation Invalid CountryCode" time="0.036">
+    </testcase>
+    <testcase classname="Tax Number Generation Invalid CountryCode" name="Tax Number Generation Invalid CountryCode" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="E-mail Validation" errors="0" failures="0" skipped="0" timestamp="2020-07-24T17:51:29" time="0.549" tests="18">
+    <testcase classname="E-mail Validation Valid Input" name="E-mail Validation Valid Input" time="0.002">
+    </testcase>
+    <testcase classname="E-mail Validation Invalid Input" name="E-mail Validation Invalid Input" time="0.001">
+    </testcase>
+    <testcase classname="Tax Number Validation Valid Input" name="Tax Number Validation Valid Input" time="0.001">
+    </testcase>
+    <testcase classname="Tax Number Validation Invalid Input" name="Tax Number Validation Invalid Input" time="0.001">
+    </testcase>
+    <testcase classname="Tax Number Validation Invalid CountryCode" name="Tax Number Validation Invalid CountryCode" time="0.006">
+    </testcase>
+    <testcase classname="Tax Number Validation Invalid Length" name="Tax Number Validation Invalid Length" time="0.001">
+    </testcase>
+    <testcase classname="Identity Number Validation Valid Input" name="Identity Number Validation Valid Input" time="0">
+    </testcase>
+    <testcase classname="Identity Number Validation Invalid Input" name="Identity Number Validation Invalid Input" time="0.001">
+    </testcase>
+    <testcase classname="Identity Number Validation Invalid CountryCode" name="Identity Number Validation Invalid CountryCode" time="0">
+    </testcase>
+    <testcase classname="Identity Number Validation Invalid Length" name="Identity Number Validation Invalid Length" time="0.001">
+    </testcase>
+    <testcase classname="Plate Validation Valid Input" name="Plate Validation Valid Input" time="0.002">
+    </testcase>
+    <testcase classname="Plate Validation Invalid Input" name="Plate Validation Invalid Input" time="0">
+    </testcase>
+    <testcase classname="Plate Validation Invalid CountryCode" name="Plate Validation Invalid CountryCode" time="0.009">
+    </testcase>
+    <testcase classname="Phone Validation Valid Input" name="Phone Validation Valid Input" time="0">
+    </testcase>
+    <testcase classname="Phone Validation Invalid Input" name="Phone Validation Invalid Input" time="0.001">
+    </testcase>
+    <testcase classname="Phone Validation Invalid CountryCode" name="Phone Validation Invalid CountryCode" time="0">
+    </testcase>
+    <testcase classname="IP Address Validation Valid Input" name="IP Address Validation Valid Input" time="0.001">
+    </testcase>
+    <testcase classname="IP Address Validation Invalid Input" name="IP Address Validation Invalid Input" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
