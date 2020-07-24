@@ -5,12 +5,15 @@
 Use pre-defined functions from serverless environment.
 
 ## Postman Collection
+
 https://documenter.getpostman.com/view/2803116/T1DpCxdd
 
 ## Base Url
+
 https://w7d24gb67j.execute-api.eu-central-1.amazonaws.com/dev
 
 ## Current endpoints
+
 - GET - /currency/exchange/{fromCurrencyCode}/{toCurrencyCode}
 - GET - /currency/exchange/{fromCurrencyCode}/{toCurrencyCode}/{amount}
 - GET - /currency/exchange/{fromCurrencyCode}/{toCurrencyCode}/{amount}/{date}
