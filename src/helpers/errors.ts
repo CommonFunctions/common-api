@@ -6,9 +6,5 @@ function invalidLength(len: number): HttpError {
 
 export = {
   trOnly: new createError.BadRequest("Sadece TR versiyonumuz bulunmaktadır."),
-  tokenRequired: new createError.Unauthorized("Token field required."),
-  invalidToken: new createError.Unauthorized("Invalid token."),
-  invalidUser: new createError.Unauthorized("Invalid user."),
-  invalidLength,
-  insufficientFunds: new createError.PaymentRequired("Insufficient funds."),
+  invalidLength
 }
