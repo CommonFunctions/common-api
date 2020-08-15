@@ -10,7 +10,7 @@
     "coverage": "jest --ci --runInBand --reporters=default --reporters=jest-junit --collect-coverage"
   },
   "dependencies": {
-    "@middy/core": "^1.0.0",
+    "@middy/core": "^1.1.0",
     "@middy/http-error-handler": "^1.0.0",
     "@types/aws-lambda": "^8.10.59",
     "@types/http-errors": "^1.8.0",
